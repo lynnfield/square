@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="Lynnfield & Menddoss">
+		<link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+		<title>Square</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/starter-template.css">
+
+		<!-- Just for debugging purposes. Don't actually copy this line! -->
+		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="">Square</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Players <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a id="soloGameButton" href="#"><span class="glyphicon glyphicon-user"></span> Solo</a></li>
+								<li><a id="duoGameButton" href="#"><span class="glyphicon glyphicon-user"></span><span class="glyphicon glyphicon-user"></span> Duo</a></li>
+								<li class="divider"></li>
+								<li><a id="onlineGameButton" href="#"><span class="glyphicon glyphicon-globe"></span> Online</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Control <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a id="left" class="control" href="#">Left: A</a></li>
+								<li><a id="right" class="control" href="#">Right: S</a></li>
+								<li class="divider"></li>
+								<li><a id="up" class="control" href="#">Up: K</a></li>
+								<li><a id="down" class="control" href="#">Down: M</a></li>
+							</ul>
+						</li>
+						<li><a href="#contact">Rules</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-offset-3 col-md-6">
+					<div id="warning">WARNING!!! STROBOSCOPE EFFECT!!!</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<ul id="xPlayerScores">
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<canvas id="canvas" height=500 width=500></canvas>
+				</div>
+				<div class="col-md-3">
+					<ul id="yPlayerScores">
+					</ul>
+				</div>
+			</div>
+			<!-- <div class="starter-template">
+			</div> -->
+		</div>
+		<script src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/structures.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/globals.js"></script>
+		<script src="js/initialization.js"></script>
+		<script src="js/gameloopfunctions.js"></script>
+		<script src="js/gameloop.js"></script>
+		<script src="js/menuloop.js"></script>
+		<script src="js/square.js"></script>
+	</body>
+</html>
